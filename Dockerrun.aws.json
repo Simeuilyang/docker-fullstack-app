@@ -20,10 +20,12 @@
       "image": "dmlfid1348/docker-nginx",
       "hostname": "nginx",
       "essential": true,
-      "portMappinigs": {
-        "hostPort": 80,
-        "containerPort": 80
-      },
+      "portMappinigs": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
       "links": ["frontend", "backend"],
       "memory": 128
     }
